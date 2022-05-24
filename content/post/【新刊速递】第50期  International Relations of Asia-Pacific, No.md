@@ -1,0 +1,257 @@
+---
+title: 【新刊速递】第50期|InternationalrelationsofAsia-Pacific,No.3,2020
+date: 2020-09-20 20:00:00
+author: 国政学人
+tags: ['新刊速递']
+---
+
+
+收录于合集 #新刊速递 123个
+
+增长![](/images/1875/2.jpeg)<img src='/images/1875/3.png' width='100%' /><img
+src='/images/1875/4.png' width='100%' /><img src='/images/1875/5.png'
+width='100%' /><img src='/images/1875/6.png' width='100%' />
+
+  
+
+ **期刊简介**
+
+<img src='/images/1875/7.png' width='100%' />
+
+International Relations of Asia-
+Pacific，成立于2001年，由牛津大学出版社代表日本国际关系协会出版，每年1月、5月和9月出版共三次。该期刊主要关注亚太地区的国际政治动态，包括中国国内政治、美国在亚太地区的地位、地区治理、日本对外关系、亚洲与国际关系理论、中国的全球化道路以及中国的国家认同等。根据2018
+Journal Citation Reports显示，其影响因子为1.233。
+
+  
+
+ **本期编委**
+
+ **【编译】** 朱文菡 杨帆
+
+ **【审校】** 杨帆 阮含含 丁伟航
+
+ **【排版】** 高思慧
+
+![](/images/1875/8.jpeg)
+
+  
+
+ **本期目录**
+
+ **1\. 签还是不签：试析中国双边投资协定的形成**
+
+To sign or not to sign: explaining the formation of China’s bilateral
+investment treaties
+
+ **2\. 权力转移与美国对中国软实力增长的回应**
+
+The power transition and the US response to China’s expanded soft power
+
+ **3\. 接触的限制？阳光政策、核试验以及韩国对朝鲜的看法，1995—2013**
+
+Limits of engagement? The sunshine policy, nuclear tests, and South Korean
+views of North Korea 1995–2013
+
+ **4\. 中国的日益自信与东亚区域主义叙事的式微**
+
+China’s rising assertiveness and the decline in the East Asian regionalism
+narrative
+
+  
+
+ **01**
+
+ **签还是不签：试析中国双边投资协定的形成**  
+
+ **【题目】** To sign or not to sign: explaining the formation of China’s
+bilateral investment treaties
+
+ **【作者】** Donglin Han（韩冬临），中国人民大学国际关系学院；Zhaoyuan Chen（陈兆源），中国人民大学国际关系学院；Ye
+Tian（田野），中国人民大学国际关系学院
+
+ **【摘要】**
+本文对自1978年以来影响中国双边投资协定形成的各种因素进行了实证检验。通过面板数据分析，本文发现国内外关系、对象国和全球因素都有助于解释双边投资协定的签订。具体而言，中国的贸易开放程度和经济增长、对象国的民主程度和社会化与协定签订呈正相关，而对象国经济增长和两国间地理距离与协定签订呈负相关。总的来说，本文发现中国签订双边投资协定主要是为了吸引外资，向外国投资者释放出其权益能够在中国得到保护的信号。此外，中国已经不太愿意与相对议价能力更高的国家签订双边投资协定了。本文发现，中国更倾向于与民主国家签订双边投资协定，这表明民主的全球传播也传播了全球化。
+
+  
+
+This article empirically examines various factors affecting the formation of
+China’s bilateral investment treaties (BITs) since 1978. Using a panel data
+analysis, this article finds that domestic and foreign relationship as well as
+foreign country and global factors, help explain the signing of BITs.
+Specifically, China’s trade openness and economic growth, foreign countries’
+level of democracy, and socialization are positively related to the signing of
+BITs, while foreign economic growth and the distance between two countries are
+negatively related to the signing of BITs. Generally, this article finds that
+China signs BITs mainly to attract foreign capital, signaling to foreign
+investors that it protects their rights in China. Meanwhile, China has been
+less likely to sign BITs with countries with which it enjoys favorable
+bargaining position. As this article finds, China is more likely to sign BITs
+with democratic countries, suggesting that global spread of democracy spread
+globalization.
+
+  
+
+ **【编译】** 朱文菡
+
+ **【校对】** 杨帆 丁伟航
+
+  
+
+ **02**
+
+ **权力转移与美国对中国软实力增长的回应**  
+
+ **【题目】** The power transition and the US response to China’s expanded soft
+power
+
+ **【作者】** Wei-hao Huang，中国台湾“中研院”政治学研究所；Donald Lien，美国德克萨斯大学圣安东尼奥分校；Jun
+Xiang，美国罗格斯大学
+
+ **【摘要】**
+许多学者在研究美国应该如何应对一个正在崛起的中国，与饱受争议的硬实力领域相反，针对中国的软实力方面的问题关注甚少，本研究可以说是第一个系统地调查美国对孔子学院的建立（中国扩大软实力的全球计划）的反应。本文认为，美国建立孔子学院的决定受到宏观和微观两个层面变量的影响，在宏观层面上，权力转移理论认为，当中国对美国表现出更高的满意度时，美国更有可能接纳孔子学院；在微观层面上，美国大学和州政府开设孔子学院是为了节省预算和参与社区活动。本文通过分析揭示了美国在面对中国不断增长的软实力时如何做出权衡，也为在国际关系中金钱购买影响力的现象提供了另一个突出的例子。
+
+  
+
+Many scholars have examined how the United States should respond to a rising
+non-democratic China. Contrary to the well-debated hard power domain, little
+attention has been devoted to China’s soft power. This study is arguably the
+first to systematically investigate the US response to the establishment of
+Confucius Institutes—China’s global initiative to expand soft power. We argue
+that the US decision to establish Confucius Institutes is influenced by both
+macro- and micro-level variables. At the macro-level, as suggested by the
+power transition theory, the United States is more likely to accommodate
+Confucius Institutes when China shows a higher level of satisfaction with the
+United States. At the micro-level, US universities and state governments host
+Confucius Institutes due to budget saving and community engaging. Our analysis
+sheds light on how the United States makes trade-offs when confronting China’s
+expanded soft power, and it provides yet another prominent example of money
+buying influence in international relations.
+
+  
+
+ **【编译】** 杨帆
+
+ **【审校】** 阮含含 丁伟航
+
+  
+
+ **03**
+
+ **接触的限制？阳光政策、核试验以及韩国对朝鲜的看法，1995—2013**  
+
+ **【题目】** Limits of engagement? The sunshine policy, nuclear tests, and South
+Korean views of North Korea 1995–2013
+
+ **【作者】** Joonbum Bae，美国科尔盖特大学政治学系
+
+ **【摘要】** 对他国采取接触的外交政策所产生的积极的国内信息能改变公众对该国的看法吗?
+这些变化能多大程度上抵抗与此种积极信息相矛盾的事件?我认为，尽管政府关于对手的积极信息可以显著改善公众舆论，但与这些信息相矛盾的重大外交政策事件仍会影响公众舆论，其代价是精英们无法通过他们的信息塑造公众舆论。当信息的内容和事件的性质不一致时，这种不同的效果会导致意见的两极分化。本文利用朝鲜外交政策行为的不可预测性，韩国政府在1998年至2007年期间对朝鲜持续的接触政策以及朝鲜前两次核试验，来考察相应的外交政策事件和精英信息对公众舆论的相对影响，得出结论与这一论点相一致。
+
+  
+
+Can positive domestic messages generated by a foreign policy of engagement
+toward another country change public views regarding that state? How resistant
+are such changes to events that contradict the positive messages? I argue that
+while positive government messages about an adversary can significantly
+improve public opinion, highly consequential foreign policy events that
+contradict the messages influence public opinion at the cost of elites’
+ability to shape it through their messages. Such differing effects can lead to
+a polarization of opinion when the content of the messages and the nature of
+events diverge from each other. Leveraging the unpredictability of North
+Korea’s foreign policy behavior, the South Korean government’s sustained
+policy of engagement toward it during the years 1998–2007, and North Korea’s
+first two nuclear tests to examine the relative impact of consequential
+foreign policy events and elite messages on public opinion, I find strong
+evidence consistent with this argument.
+
+  
+
+ **【编译】** 杨帆
+
+ **【校对】** 阮含含 丁伟航
+
+  
+
+ **04**
+
+ **中国的日益自信与东亚区域主义叙事的式微**  
+
+ **【题目】** China’s rising assertiveness and the decline in the East Asian
+regionalism narrative
+
+ **【作者】** Andrew Yeo，美国天主教大学政治学系
+
+ **【摘要】**
+历经东亚一体化前景在学术和政治话语中得意的十年后，区域主义叙事黯然失色，取而代之的是一种更加“灰暗”的地区叙事。东亚区域主义的设想是否已经实现？如果是，又该如何解释作为政策设想和研究项目的亚洲区域主义叙事的式微？在分析了涉及亚洲区域主义相关文献消长的实证证据后，作者提出了解释这一式微的几个合理原因。其中，中国战略行为的转变以及与之相应的采取对于亚洲安全实践更为务实的解释——即由均势和制度竞争而非社群构建来定义——显然给了东亚区域项目沉重一击。
+
+  
+
+After a decade of vibrant scholarly and political discourse regarding the
+prospects of East Asian integration, the narrative of regionalism has lost its
+luster in favor of a darker regional narrative. Has the idea of East Asian
+regionalism come to pass, and if so, what explains the decline in the
+narrative of Asian regionalism both as a policy idea and as a research
+program? After providing empirical evidence tracking the rise and decline in
+scholarly publications and news articles regarding Asian regionalism, I
+present several plausible reasons explaining this decline. Among them, the
+perceived shift in Chinese strategic behavior, and in turn, the adoption of
+more pragmatic interpretations of Asian security practices – one defined by
+power balancing and institutional rivalry rather than community building –
+appears to have struck a major blow to the East Asia regional project.
+
+  
+
+ **【编译】** 朱文菡
+
+ **【审校】** 杨帆 丁伟航
+
+  
+
+文章观点不代表本平台观点，本平台评译分享的文章均出于专业学习之用, 不以任何盈利为目的，内容主要呈现对原文的介绍，原文内容请通过各高校购买的数据库自行下载
+
+ **  
+**
+
+ **  
+**
+
+ **  
+**
+
+ **添加 “国小政”微信**
+
+ **获取最新资讯**
+
+![](/images/1875/9.jpeg)![](/images/1875/10.gif) <img
+src='/images/1875/11.gif' width='100%' />
+
+![]()
+
+国政学人
+
+支持学术公益与知识传播
+
+![赞赏二维码]() **微信扫一扫赞赏作者** __赞赏
+
+已喜欢，[对作者说句悄悄话](javascript:;)
+
+取消 __
+
+#### 发送给作者
+
+发送
+
+最多40字，当前共字
+
+[](javascript:;) 人赞赏
+
+上一页 [1](javascript:;)/3 下一页
+
+长按二维码向我转账
+
+支持学术公益与知识传播
+
+![赞赏二维码]()
+
+受苹果公司新规定影响，微信 iOS 版的赞赏功能被关闭，可通过二维码转账支持公众号。
+

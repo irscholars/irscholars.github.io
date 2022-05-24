@@ -1,0 +1,169 @@
+baseURL: https://irscholars.github.io
+languageCode: zh-cn 
+title: 国政学人
+theme: PaperMod 
+enableEmoji : true
+publishDir : docs
+hasCJKLanguage : true
+relativeURLs : true
+canonifyURLs : false
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 15  
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+defaultContentLanguage: en # 最顶部首先展示的语言页面
+defaultContentLanguageInSubdir: true
+
+
+languages:
+    en:
+      languageName: "English"
+      # contentDir: content/english
+      weight: 1
+      profileMode:
+        enabled: true
+        title: 国政学人
+        subtitle: "中国国际关系学界最大的学术编译平台，专注国内外权威杂志前沿学术动态。受众定位高水平研究者，目前已覆盖国内本领域所有科研院校。"
+        imageUrl: "images/logo.jpeg"
+        imageTitle: 
+        imageWidth: 150
+        imageHeight: 150
+        # buttons:
+        #   - name: 🧧历史政治学
+        #     url: tags/历史政治学
+        #   - name: 📕国家建构与国家发展
+        #     url: tags/国家建构与国家发展
+        #   - name: 🌍比较政治学
+        #     url: tags/比较政治学
+        #   - name: 🗳️民主与民主化
+        #     url: tags/民主与民主化
+        #   - name: 🧑🏻‍🏫学人专访
+        #     url: tags/学人专访      
+        #   - name: 🧱实用技术
+        #     url: tags/学人专访                           
+      menu:
+        main:
+          - identifier: search
+            name: 🔍
+            url: search
+            weight: 1
+          # - identifier: home
+          #   name: 🏠主页
+          #   url: /
+          #   weight: 2
+          - identifier: posts
+            name: 📚文章
+            url: post
+            weight: 3
+          # - identifier: tech
+          #   name: 👨🏻‍💻技术文章
+          #   url: posts/tech
+          #   weight: 5
+          # - identifier: life
+          #   name: 🏖记录生活
+          #   url: posts/life
+          #   weight: 6
+          - identifier: archives
+            name: ⏱时间轴
+            url: archives/
+            weight: 20
+          # - identifier: categories
+          #   name: 🧩分类
+          #   url: categories
+          #   weight: 30
+          - identifier: tags
+            name: 🔖标签
+            url: tags
+            weight: 40
+          - identifier: about
+            name: 🙋🏻‍♂️关于
+            url: about
+            weight: 50
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    author: 国政学人编辑部
+
+  
+    defaultTheme: auto  # defaultTheme: light or  dark 
+    disableThemeToggle: false
+    DateFormat: "2006-01-02"
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecialistPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    hideFooter: false # 隐藏页脚
+    ShowWordCounts: true
+    VisitCount: true
+
+    ShowLastMod: true #显示文章更新时间
+
+    ShowToc: true # 显示目录
+    TocOpen: true # 自动展开目录
+
+    comments: true
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/Poliview"
+        - name: WeChat
+          url: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5ODY0MTQ1OA==&scene=124#wechat_redirect"
+
+    assets:
+        favicon: "image/logo.jpeg"
+        apple_touch_icon: "images/logo.jpeg"
+        safari_pinned_tab: "images/logo.jpeg"
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 1
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary"]
+
+    twikoo:
+      version: 1.5.11
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+markup:
+    highlight:
+        # anchorLineNos: true
+        codeFences: true  
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        # style: monokai
+        style: darcula
+
+        # codeFences：代码围栏功能，这个功能一般都要设为 true 的，不然很难看，就是干巴巴的-代码文字，没有颜色。
+        # guessSyntax：猜测语法，这个功能建议设置为 true, 如果你没有设置要显示的语言则会自动匹配。
+        # hl_Lines：高亮的行号，一般这个不设置，因为每个代码块我们可能希望让高亮的地方不一样。
+        # lineNoStart：行号从编号几开始，一般从 1 开始。
+        # lineNos：是否显示行号，我比较喜欢显示，所以我设置的为 true.
+        # lineNumbersInTable：使用表来格式化行号和代码,而不是 标签。这个属性一般设置为 true.
+        # noClasses：使用 class 标签，而不是内嵌的内联样式

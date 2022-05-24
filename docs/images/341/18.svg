@@ -1,0 +1,8 @@
+  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 13 13" style="vertical-align: middle; max-width: 100%;" width="100%">
+   <rect width="13" height="13" fill="rgb(255, 255, 255)">
+   </rect>
+   <path d="M13,0h-1c0,6.6-5.4,12-12,12v1C7.2,13,13,7.2,13,0z" fill="rgb(214,208,191)">
+   </path>
+   <polygon points="13,4 13,5 5,5 5,13 4,13 4,4" fill="rgb(214,208,191)">
+   </polygon>
+  </svg>

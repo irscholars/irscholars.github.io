@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>【量化研究】做量化研究，你为什么需要学习结构方程模型？ | 国政学人</title>
+<meta name="keywords" content="">
+<meta name="description" content="收录于合集 当我们不少的小伙伴还在为SPSS发愁的时候，不知道从何时起， SEM （Structural Equation Modeling，结构方程模型）突然变得风声">
+<meta name="author" content="国政学人编辑部">
+<link rel="canonical" href="https://irscholars.github.io/post/%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E5%81%9A%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E4%BD%A0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%BB%93%E6%9E%84%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.min.1b26d548f54aff9203f105c592e1fc66c49cffc523aaf3612804ecc89265d4f6.css" integrity="sha256-GybVSPVK/5ID8QXFkuH8ZsSc/8UjqvNhKATsyJJl1PY=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="../../assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://irscholars.github.io/image/logo.jpeg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://irscholars.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://irscholars.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://irscholars.github.io/images/logo.jpeg">
+<link rel="mask-icon" href="https://irscholars.github.io/images/logo.jpeg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="【量化研究】做量化研究，你为什么需要学习结构方程模型？" />
+<meta property="og:description" content="收录于合集 当我们不少的小伙伴还在为SPSS发愁的时候，不知道从何时起， SEM （Structural Equation Modeling，结构方程模型）突然变得风声" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://irscholars.github.io/post/%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E5%81%9A%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E4%BD%A0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%BB%93%E6%9E%84%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-05-23T18:01:00&#43;00:00" />
+<meta property="article:modified_time" content="2018-05-23T18:01:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【量化研究】做量化研究，你为什么需要学习结构方程模型？"/>
+<meta name="twitter:description" content="收录于合集 当我们不少的小伙伴还在为SPSS发愁的时候，不知道从何时起， SEM （Structural Equation Modeling，结构方程模型）突然变得风声"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://irscholars.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "【量化研究】做量化研究，你为什么需要学习结构方程模型？",
+      "item": "https://irscholars.github.io/post/%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E5%81%9A%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E4%BD%A0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%BB%93%E6%9E%84%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "【量化研究】做量化研究，你为什么需要学习结构方程模型？",
+  "name": "【量化研究】做量化研究，你为什么需要学习结构方程模型？",
+  "description": "收录于合集 当我们不少的小伙伴还在为SPSS发愁的时候，不知道从何时起， SEM （Structural Equation Modeling，结构方程模型）突然变得风声",
+  "keywords": [
+    
+  ],
+  "articleBody": "收录于合集\n当我们不少的小伙伴还在为SPSS发愁的时候，不知道从何时起， SEM （Structural Equation Modeling，结构方程模型）突然变得风声水起。学长发现，不少同学的论文都开始玩起高大上的SEM了，朋友圈也经常发现有人晒出精巧的结构方程。年前和一位小伙伴聊天，我发现作为一个社会工作专业的硕士毕业生，她的论文已经把SNA（社会网络分析）和SEM结合起来。这让小编想起多年前做论文，苦于当年（2007）年还找不到关于结构方程模型的中文教材，只能打印一份份英文指导和PPT讲义的情景还历历在目。 但十年弹指一挥间，现在作为一名社会科学的毕业生，你要说没听过SEM还真的有点说不过去了。 如果你是老师，碰巧还是搞定量，如果不会用SEM搞个模型啥的，那就真对不起你拿的薪水了。（在美国，所有合格的助理教授以上都会接受SEM的训练）\n用SEM更容易发文吗？\nSEM因为更复杂，看上去更高大上，那是否用SEM就会更容易发文呢？在早期，因为期刊的编辑对SEM还不是特别熟悉，所以面对庞大、复杂的SEM模型，文章投稿者的确更容量获得发表的优势，但现在情况又如何呢？\n2008年，美国著名统计学大师Barry J. Babin、Joseph F.Hair和James Boles合作发表了一篇文章Publishing Research in Marketing Journals Using Structural Equation Modeling，在这篇论文中三位学者通过追踪美国市场营销领域顶尖期刊投审稿及发表情况得出结论： 使用结构方程模型（SEM）能够提升论文质量和评审专家的推荐力度，增加发表概率。具体结论有以下几个：\n论文使用SEM的拒稿率为 70.2% ，而没有使用SEM的被拒率是 84.1% ，统计显著（p=0.034）\n用什么软件做SEM？\n作为一种统计技术，SEM最早可以追溯到1910年代，但真正成熟是在1960-1970年代，随着各种模型的发展，也发展出了各种能够方便快捷使用的SEM软件技术，比如我们耳熟能详的AMOS、Lisrel等等，那究竟哪一种软件更热门呢？\n我们首先在Google Trend中进行了对比。从数据中很明显地可以看出，2004年至今，红颜色所代表的Amos全面碾压了Lisrel。\n另外，2009年发表的一篇叫 《A Systematic Review of Structural Equation Modelling in Social Work Research》 的文章提供了社会工作领域的SEM软件的使用对比图，其中AMOS软件占到 40% ，Lisrel占比25%。\n我们没有中国的数据，但如果在中国的话，相信AMOS会使用地更多。主要原因是： AMOS提供了类似SPSS式样的图形界面，会更加方便你的操作，而Lisrel则需要通过编程的方式进行 。\n中国的SEM是小众吗？\nSEM是不是小众呢？我们在Google Trends里比较了SPSS和AMOS这两个软件从2004到2017年的数据，结果如下：\n可见这两个软件，其实一直是不相上下地走了这么多年。但你可能觉得为啥俺们这旮旯就只听过SPSS呢？所以我们来看数据，下图一是美国的数据，图二是中国的数据。\n在美国AMOS的搜索指数21，SPSS是11，而在中国AMOS只有3，但SPSS却有29。所以，中国目前的SEM肯定相比于SPSS算是小众。但是正所谓要居于学术前沿，尽早掌握AMOS和SEM对你的学术很重要。\n所以学长要郑重为大家推荐一门课程，学术中国和“亚洲统计一哥”张伟豪耗时一年，用心打磨的《量化论文写作与Amos数据分析特训营》。\n7月24日—26日，3天时间，为你拆解最经典的结构方程模型文章，带你跑出最让期刊编辑眼前一亮的报表，教你学会量化论文每一部分的写作“套路”，让你彻底掌握国际发文利器结构方程模型及其软件Amos，实现顶级期刊发文突破。\n**\n**\n 这门课为什么值得推荐？\n**\n**\n思路至上，经典论文贯穿始终\n学习的最终目的是你自己写出好论文并且发表，其捷径就是模仿。我们精选了10篇SEM中、英文经典论文, 让你学习的每一步都能有效促成优秀论文的形成。你将直观地了解好的量化论文是什么样的，有哪些特质，文献综述、研究架构等每一具体部分应该如何撰写，如何跑出和经典论文中一样漂亮的报表，如何将分析结果巧妙呈现在论文中…… 课程结束后，你至少可以“依葫芦画瓢”，独立完成一篇优秀的SEM量化论文 。\n数据分析实战，让你真正会操作\n你将通过两套数据的实战演练，掌握数据分析及软件操作部分。首先，你会和老师使用同一套数据，跟随老师一步一步学习Amos的核心操作步骤。在基本掌握后，你将用经典论文中的真实数据自行检测学习结果，老师和助教会帮助你分析出和论文中一样的报表，让你彻底掌握各个操作流程在真实研究中的应用。你将必须携带个人电脑，参与实地的数据演练，最终目的，是让你自己跑出数据，输出结果，并给出解释。\n顶级助教现场手把手指导，再也不用担心跟不上\n课程将采取面授形式，你将与“亚洲统计一哥”面对面深度互动，同时，更有一哥团队教授级别的助教亲临现场，他们都是发文高手，熟知量化研究和论文写作中的各种错误，熟悉各种模型的架构和解读。即使课程结束，助教们也会在群里提供答疑，继续陪伴你完成以后的量化研究，见证你的每一次发表。\n智能量化研究系统的账号初体验\n张伟豪团队历时10年，“十年磨一剑”，研发了智能量化研究系统，让你可以不再学习复杂的结构方程模型操作，获得你想要的模型及结果解释，更有选题系统和资料检验系统，帮助你确立选题方向，检验数据的收敛度等。凡报名学员，都将获得3个月的系统免费试用权。\n老师怎么样？\n张伟豪 ，台湾统计学专家，因精通结构方程模型被称为“亚洲一哥”，曾任IBM公司软件资深顾问，现创办三星统计服务有限公司，并担任首席数据分析师和首席培训师；精通多种数据分析应用技术，常年赴大陆及海外教学，授课通俗易懂、风趣幽默，受到广泛好评。\n适合什么样的人学习？\n你需要具备一定的量化研究和数据分析方法基础，如会SPSS基本操作 （如基础不够，可在课前申请免费学习，具体咨询学长） ，决心掌握结构方程模型与Amos数据分析能力，发表CSSCI、SSCI量化论文。如果你近期计划申请课题或硕博士开题，尤其建议你来学习，会少走许多弯路。\n3天课程会讲哪些内容？\n详情介绍\n时间： 2018年7月24日-26日\n地点： 天津（详细地点另行通知）\n招生人数： 100人（不含学术中国会员）\n咨询联系人：\n张老师：手机或微信：15501101763；\n刘老师：电话：010-56204616；手机：18600520319；\n回放： 提供一个月视频回放\n报名方式\n**\n**\n现场参加：\n报名费用： 2500元/人\n5人及以上团体报名： 2200元/人\n▷ 注： 费用包含报名费、资料费、证书费等，学员食宿及往返交通费用自理\n1、扫描或长按下方二维码直接报名\n\n2、对公转账：（请转款前与主办方确认是否还有名额，确认后进行转款，在摘要中注明姓名和联系方式）\n 企业开户名称：北京思高乐教育科技有限公司\n开户行：招商银行股份有限公司北京双榆树支行\n银行卡号：110918346010101\n网络直播报名：\n报名费用： 1500元/人\n5人及以上团体报名： 1000元/人\n扫描或长按下方二维码直接报名\n▽\n注意事项\n1、报名截止日期：2018年7月20日17:00（具体截止日期根据实际招生而定，人员招满，将会立即关闭报名通道）。\n2、如您报名后有事不能参加，请在报名之后的10-15天之内办理退费，并将收取6%的手续费！2018年7月17日17:00之后不再接受退费！\n3、本次会议可提供增值税普通发票，如需开具，请在购买时点开“是否开发票”项，并根据自己单位财务部门要求填写抬头和类目信息（一旦开具不能重开），信息填写完整的老师可现场领取发票和会议通知，报名网络直播的学员发票通过快递邮寄领取。\n4、请学员自带笔记本电脑，自行安装AMOS软件。\n▷部分资料参考自：社会学吧\n",
+  "wordCount" : "3120",
+  "inLanguage": "en",
+  "datePublished": "2018-05-23T18:01:00Z",
+  "dateModified": "2018-05-23T18:01:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "国政学人编辑部"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://irscholars.github.io/post/%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E5%81%9A%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E4%BD%A0%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%BB%93%E6%9E%84%E6%96%B9%E7%A8%8B%E6%A8%A1%E5%9E%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "国政学人",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://irscholars.github.io/image/logo.jpeg"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://irscholars.github.io" accesskey="h" title="国政学人 (Alt + H)">国政学人</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://irscholars.github.io/search" title="🔍 (Alt &#43; /)" accesskey=/>
+                    <span>🔍</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://irscholars.github.io/post" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://irscholars.github.io/archives/" title="⏱时间轴">
+                    <span>⏱时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://irscholars.github.io/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://irscholars.github.io/about" title="🙋🏻‍♂️关于">
+                    <span>🙋🏻‍♂️关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://irscholars.github.io">Home</a>&nbsp;»&nbsp;<a href="https://irscholars.github.io/post/">Posts</a></div>
+    <h1 class="post-title">
+      【量化研究】做量化研究，你为什么需要学习结构方程模型？
+    </h1>
+    <div class="post-meta"><span title='2018-05-23 18:01:00 +0000 UTC'>2018-05-23</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;国政学人编辑部
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>收录于合集</p>
+<p>当我们不少的小伙伴还在为SPSS发愁的时候，不知道从何时起， <strong>SEM</strong> （Structural Equation
+Modeling，结构方程模型）突然变得风声水起。学长发现，不少同学的论文都开始玩起高大上的SEM了，朋友圈也经常发现有人晒出精巧的结构方程。年前和一位小伙伴聊天，我发现作为一个社会工作专业的硕士毕业生，她的论文已经把SNA（社会网络分析）和SEM结合起来。这让小编想起多年前做论文，苦于当年（2007）年还找不到关于结构方程模型的中文教材，只能打印一份份英文指导和PPT讲义的情景还历历在目。
+<strong>但十年弹指一挥间，现在作为一名社会科学的毕业生，你要说没听过SEM还真的有点说不过去了。</strong>
+如果你是老师，碰巧还是搞定量，如果不会用SEM搞个模型啥的，那就真对不起你拿的薪水了。（在美国，所有合格的助理教授以上都会接受SEM的训练）</p>
+<p><strong>用SEM更容易发文吗？</strong></p>
+<p>SEM因为更复杂，看上去更高大上，那是否用SEM就会更容易发文呢？在早期，因为期刊的编辑对SEM还不是特别熟悉，所以面对庞大、复杂的SEM模型，文章投稿者的确更容量获得发表的优势，但现在情况又如何呢？</p>
+<p>2008年，美国著名统计学大师Barry J. Babin、Joseph F.Hair和James Boles合作发表了一篇文章Publishing
+Research in Marketing Journals Using Structural Equation
+Modeling，在这篇论文中三位学者通过追踪美国市场营销领域顶尖期刊投审稿及发表情况得出结论：
+<strong>使用结构方程模型（SEM）能够提升论文质量和评审专家的推荐力度，增加发表概率。具体结论有以下几个：</strong></p>
+<p>论文使用SEM的拒稿率为 <strong>70.2%</strong> ，而没有使用SEM的被拒率是 <strong>84.1%</strong> ，统计显著（p=0.034）</p>
+<p><img loading="lazy" src="../../images/3727/2.png" alt=""  />
+</p>
+<p><strong>用什么软件做SEM？</strong></p>
+<p>作为一种统计技术，SEM最早可以追溯到1910年代，但真正成熟是在1960-1970年代，随着各种模型的发展，也发展出了各种能够方便快捷使用的SEM软件技术，比如我们耳熟能详的AMOS、Lisrel等等，那究竟哪一种软件更热门呢？</p>
+<p>我们首先在Google Trend中进行了对比。从数据中很明显地可以看出，2004年至今，红颜色所代表的Amos全面碾压了Lisrel。</p>
+<p><img loading="lazy" src="../../images/3727/3.png" alt=""  />
+</p>
+<p>另外，2009年发表的一篇叫 <strong>《A Systematic Review of Structural Equation Modelling in
+Social Work Research》</strong> 的文章提供了社会工作领域的SEM软件的使用对比图，其中AMOS软件占到 <strong>40%</strong>
+，Lisrel占比25%。</p>
+<p><img loading="lazy" src="../../images/3727/4.png" alt=""  />
+</p>
+<p>我们没有中国的数据，但如果在中国的话，相信AMOS会使用地更多。主要原因是：
+<strong>AMOS提供了类似SPSS式样的图形界面，会更加方便你的操作，而Lisrel则需要通过编程的方式进行</strong> 。</p>
+<p><strong>中国的SEM是小众吗？</strong></p>
+<p>SEM是不是小众呢？我们在Google Trends里比较了SPSS和AMOS这两个软件从2004到2017年的数据，结果如下：</p>
+<p><img loading="lazy" src="../../images/3727/5.png" alt=""  />
+</p>
+<p>可见这两个软件，其实一直是不相上下地走了这么多年。但你可能觉得为啥俺们这旮旯就只听过SPSS呢？所以我们来看数据，下图一是美国的数据，图二是中国的数据。</p>
+<p><img loading="lazy" src="../../images/3727/6.png" alt=""  />
+</p>
+<p><img loading="lazy" src="../../images/3727/7.png" alt=""  />
+</p>
+<p>在美国AMOS的搜索指数21，SPSS是11，而在中国AMOS只有3，但SPSS却有29。所以，中国目前的SEM肯定相比于SPSS算是小众。但是正所谓要居于学术前沿，尽早掌握AMOS和SEM对你的学术很重要。</p>
+<p>所以学长要郑重为大家推荐一门课程，学术中国和“亚洲统计一哥”张伟豪耗时一年，用心打磨的《量化论文写作与Amos数据分析特训营》。</p>
+<p><strong>7月24日—26日，3天时间，为你拆解最经典的结构方程模型文章，带你跑出最让期刊编辑眼前一亮的报表，教你学会量化论文每一部分的写作“套路”，让你彻底掌握国际发文利器结构方程模型及其软件Amos，实现顶级期刊发文突破。</strong></p>
+<p>**<br>
+**</p>
+<hr>
+<p><strong>这门课为什么值得推荐？</strong></p>
+<p>**<br>
+**</p>
+<p><strong>思路至上，经典论文贯穿始终</strong></p>
+<p>学习的最终目的是你自己写出好论文并且发表，其捷径就是模仿。我们精选了10篇SEM中、英文经典论文,
+让你学习的每一步都能有效促成优秀论文的形成。你将直观地了解好的量化论文是什么样的，有哪些特质，文献综述、研究架构等每一具体部分应该如何撰写，如何跑出和经典论文中一样漂亮的报表，如何将分析结果巧妙呈现在论文中……
+<strong>课程结束后，你至少可以“依葫芦画瓢”，独立完成一篇优秀的SEM量化论文</strong> 。</p>
+<p><strong>数据分析实战，让你真正会操作</strong></p>
+<p>你将通过两套数据的实战演练，掌握数据分析及软件操作部分。首先，你会和老师使用同一套数据，跟随老师一步一步学习Amos的核心操作步骤。在基本掌握后，你将用经典论文中的真实数据自行检测学习结果，老师和助教会帮助你分析出和论文中一样的报表，让你彻底掌握各个操作流程在真实研究中的应用。你将必须携带个人电脑，参与实地的数据演练，最终目的，是让你自己跑出数据，输出结果，并给出解释。</p>
+<p><strong>顶级助教现场手把手指导，再也不用担心跟不上</strong></p>
+<p>课程将采取面授形式，你将与“亚洲统计一哥”面对面深度互动，同时，更有一哥团队教授级别的助教亲临现场，他们都是发文高手，熟知量化研究和论文写作中的各种错误，熟悉各种模型的架构和解读。即使课程结束，助教们也会在群里提供答疑，继续陪伴你完成以后的量化研究，见证你的每一次发表。</p>
+<p><strong>智能量化研究系统的账号初体验</strong></p>
+<p>张伟豪团队历时10年，“十年磨一剑”，研发了智能量化研究系统，让你可以不再学习复杂的结构方程模型操作，获得你想要的模型及结果解释，更有选题系统和资料检验系统，帮助你确立选题方向，检验数据的收敛度等。凡报名学员，都将获得3个月的系统免费试用权。</p>
+<p><strong>老师怎么样？</strong></p>
+<p><strong>张伟豪</strong>
+，台湾统计学专家，因精通结构方程模型被称为“亚洲一哥”，曾任IBM公司软件资深顾问，现创办三星统计服务有限公司，并担任首席数据分析师和首席培训师；精通多种数据分析应用技术，常年赴大陆及海外教学，授课通俗易懂、风趣幽默，受到广泛好评。</p>
+<p><strong>适合什么样的人学习？</strong></p>
+<p>你需要具备一定的量化研究和数据分析方法基础，如会SPSS基本操作 <strong>（如基础不够，可在课前申请免费学习，具体咨询学长）</strong>
+，决心掌握结构方程模型与Amos数据分析能力，发表CSSCI、SSCI量化论文。如果你近期计划申请课题或硕博士开题，尤其建议你来学习，会少走许多弯路。</p>
+<p><strong>3天课程会讲哪些内容？</strong></p>
+<p><img loading="lazy" src="../../images/3727/8.png" alt=""  />
+</p>
+<p><strong>详情介绍</strong></p>
+<p><strong>时间：</strong> 2018年7月24日-26日</p>
+<p><strong>地点：</strong> 天津（详细地点另行通知）</p>
+<p><strong>招生人数：</strong> 100人（不含学术中国会员）</p>
+<p><strong>咨询联系人：</strong></p>
+<p>张老师：手机或微信：15501101763；</p>
+<p>刘老师：电话：010-56204616；手机：18600520319；</p>
+<p><strong>回放：</strong> 提供一个月视频回放</p>
+<p><strong>报名方式</strong></p>
+<p>**<br>
+**</p>
+<p><strong>现场参加：</strong></p>
+<p><strong>报名费用：</strong> 2500元/人</p>
+<p><strong>5人及以上团体报名：</strong> 2200元/人</p>
+<p>▷ <strong>注：</strong> 费用包含报名费、资料费、证书费等，学员食宿及往返交通费用自理</p>
+<p><strong>1、扫描或长按下方二维码直接报名</strong></p>
+<p><strong><img loading="lazy" src="../../images/3727/9.png" alt=""  />
+</strong></p>
+<p><strong>2、对公转账：（请转款前与主办方确认是否还有名额，确认后进行转款，在摘要中注明姓名和联系方式）</strong></p>
+<hr>
+<p>企业开户名称：北京思高乐教育科技有限公司</p>
+<p>开户行：招商银行股份有限公司北京双榆树支行</p>
+<p>银行卡号：110918346010101</p>
+<p><strong>网络直播报名：</strong></p>
+<p><strong>报名费用：</strong> 1500元/人</p>
+<p><strong>5人及以上团体报名：</strong> 1000元/人</p>
+<p><strong>扫描或长按下方二维码直接报名</strong></p>
+<p><strong>▽</strong></p>
+<p><img loading="lazy" src="../../images/3727/10.png" alt=""  />
+</p>
+<p><strong>注意事项</strong></p>
+<p>1、报名截止日期：2018年7月20日17:00（具体截止日期根据实际招生而定，人员招满，将会立即关闭报名通道）。</p>
+<p>2、如您报名后有事不能参加，请在报名之后的10-15天之内办理退费，并将收取6%的手续费！2018年7月17日17:00之后不再接受退费！</p>
+<p>3、本次会议可提供增值税普通发票，如需开具，请在购买时点开“是否开发票”项，并根据自己单位财务部门要求填写抬头和类目信息（一旦开具不能重开），信息填写完整的老师可现场领取发票和会议通知，报名网络直播的学员发票通过快递邮寄领取。</p>
+<p>4、请学员自带笔记本电脑，自行安装AMOS软件。</p>
+<p>▷部分资料参考自：社会学吧</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://irscholars.github.io/post/%E6%B0%91%E6%97%8F%E9%97%AE%E9%A2%98%E5%BB%96%E6%98%A5%E5%8B%87%E8%BA%AB%E4%BB%BD%E8%AE%A4%E5%90%8C%E4%B8%8E%E7%A4%BE%E7%BE%A4%E6%9A%B4%E5%8A%9B%E8%A7%86%E9%98%88%E4%B8%8B%E7%9A%84%E7%BC%85%E7%94%B8%E7%BD%97%E5%85%B4%E4%BA%9A%E9%97%AE%E9%A2%98%E7%A0%94%E7%A9%B6/">
+    <span class="title">« Prev Page</span>
+    <br>
+    <span>【民族问题】廖春勇：身份认同与社群暴力视阈下的缅甸罗兴亚问题研究</span>
+  </a>
+  <a class="next" href="https://irscholars.github.io/post/%E7%90%86%E8%AE%BA%E7%A0%94%E7%A9%B6%E5%A7%9C%E9%B9%8F%E6%B5%B7%E9%99%86%E5%A4%8D%E5%90%88%E5%9E%8B%E5%A4%A7%E5%9B%BD%E5%B4%9B%E8%B5%B7%E7%9A%84%E8%85%93%E5%8A%9B%E9%99%B7%E9%98%B1%E4%B8%8E%E6%88%98%E7%95%A5%E9%80%8F%E6%94%AF/">
+    <span class="title">Next Page »</span>
+    <br>
+    <span>【理论研究】姜鹏：海陆复合型大国崛起的“腓力陷阱”与战略透支</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 【量化研究】做量化研究，你为什么需要学习结构方程模型？ on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e3%80%90%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%e3%80%91%e5%81%9a%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%ef%bc%8c%e4%bd%a0%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%ad%a6%e4%b9%a0%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%ef%bc%9f&amp;url=https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f&amp;hashtags=">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 【量化研究】做量化研究，你为什么需要学习结构方程模型？ on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f&amp;title=%e3%80%90%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%e3%80%91%e5%81%9a%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%ef%bc%8c%e4%bd%a0%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%ad%a6%e4%b9%a0%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%ef%bc%9f&amp;summary=%e3%80%90%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%e3%80%91%e5%81%9a%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%ef%bc%8c%e4%bd%a0%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%ad%a6%e4%b9%a0%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%ef%bc%9f&amp;source=https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 【量化研究】做量化研究，你为什么需要学习结构方程模型？ on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f&title=%e3%80%90%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%e3%80%91%e5%81%9a%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%ef%bc%8c%e4%bd%a0%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%ad%a6%e4%b9%a0%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%ef%bc%9f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 【量化研究】做量化研究，你为什么需要学习结构方程模型？ on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 【量化研究】做量化研究，你为什么需要学习结构方程模型？ on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e3%80%90%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%e3%80%91%e5%81%9a%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%ef%bc%8c%e4%bd%a0%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%ad%a6%e4%b9%a0%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%ef%bc%9f%20-%20https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share 【量化研究】做量化研究，你为什么需要学习结构方程模型？ on telegram"
+        href="https://telegram.me/share/url?text=%e3%80%90%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%e3%80%91%e5%81%9a%e9%87%8f%e5%8c%96%e7%a0%94%e7%a9%b6%ef%bc%8c%e4%bd%a0%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81%e5%ad%a6%e4%b9%a0%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%ef%bc%9f&amp;url=https%3a%2f%2firscholars.github.io%2fpost%2f%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E5%2581%259A%25E9%2587%258F%25E5%258C%2596%25E7%25A0%2594%25E7%25A9%25B6%25E4%25BD%25A0%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E9%259C%2580%25E8%25A6%2581%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25BB%2593%25E6%259E%2584%25E6%2596%25B9%25E7%25A8%258B%25E6%25A8%25A1%25E5%259E%258B%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+<div>
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+        <hr />
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.5.11/dist/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: "https://poliview-twikko.vercel.app/",  
+            el: "#tcomment",
+            lang: 'zh-CN',
+            region: 'ap-guangzhou',  
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        });
+    </script>
+</div>
+
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://irscholars.github.io">国政学人</a></span>
+    <span>
+        Powered by 政观编辑部
+
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
